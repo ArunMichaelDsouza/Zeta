@@ -9,8 +9,7 @@
    Date : 26/08/2013
 
    NOTE : Zeta has been built at an 'implementation-scale'. Although the native OS
-          is equipped with a standard command-line utility, use of Zeta is completely not
-          discouraged.
+          is equipped with a standard command-line utility, use of Zeta is completely encouraged.
 */
 
 
