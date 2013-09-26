@@ -15,6 +15,7 @@
 
 
 //Header File Inclusion
+
 #include <stdio.h>
 #include <string.h>
 #include <process.h>
@@ -46,34 +47,34 @@ int main(int argc, char const *argv[])
 
 void initiate()
 {
-	char input[30];
+    char input[30];
 
-	//Prompt Start
-	printf("\n:> ");
+    //Prompt Start
+    
+    printf("\n:> ");
     scanf("%s",&input);
 
     //----------------------------------------------------------------------------------------
-	//EXIT COMMAND
+    //EXIT COMMAND
     if ((stricmp(input,"exit")==0))//To exit command interpreter
     {
         main_exit();
     }
-	//----------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------
 
-	//----------------------------------------------------------------------------------------
-	//CLEAR SCREEN COMMAND
-	else if(stricmp(input,"clr")==0) //To clear screen
-	{
-	    cls( GetStdHandle( STD_OUTPUT_HANDLE ));
-	    initiate();
-	}
-	//----------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------
+    //CLEAR SCREEN COMMAND
+    else if(stricmp(input,"clr")==0) //To clear screen
+    {
+    	cls( GetStdHandle( STD_OUTPUT_HANDLE ));
+	initiate();
+    }
+    //----------------------------------------------------------------------------------------
 
-	//----------------------------------------------------------------------------------------
 
-	//----------------------------------------------------------------------------------------
-	//TIME COMMANDS
-	else if ((stricmp(input,"time")==0)) //To show time (default format:24hr HH/MM/SS.MS)
+    //----------------------------------------------------------------------------------------
+    //TIME COMMANDS
+    else if ((stricmp(input,"time")==0)) //To show time (default format:24hr HH/MM/SS.MS)
     {
     	sys_time_def();
     }
@@ -90,28 +91,28 @@ void initiate()
 
     else if ((stricmp(input,"time-e")==0)) //To show time and provide 'editing' option
     {
-		system("time");
-		initiate();
+	system("time");
+	initiate();
     }
     //----------------------------------------------------------------------------------------
 
     //----------------------------------------------------------------------------------------
-	//DATE COMMANDS
-	else if ((stricmp(input,"date")==0)) //To show date (default format:MM/DD/YYYY)
+    //DATE COMMANDS
+    else if ((stricmp(input,"date")==0)) //To show date (default format:MM/DD/YYYY)
     {
     	sys_date_def();
     }
 
     else if ((stricmp(input,"date-e")==0)) //To show date and provide 'editing' option
     {
-		system("date");
-		initiate();
+	system("date");
+	initiate();
     }
     //----------------------------------------------------------------------------------------
 
     //----------------------------------------------------------------------------------------
-	//DAY COMMANDS
-	else if ((stricmp(input,"day")==0)) //To show day/date of month
+    //DAY COMMANDS
+    else if ((stricmp(input,"day")==0)) //To show day/date of month
     {
     	sys_day();
     }
@@ -120,7 +121,7 @@ void initiate()
     {
     	sys_day_det();
     }
-	//----------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------
 
 	else
     {
@@ -135,22 +136,21 @@ void initiate()
 
 void main_exit()
 {
-	exit(0);
+    exit(0);
 }
 
 
 
 void sys_time_def()
 {
-    //Type Declaration Statements
     char input[IPSIZE];
     char buffer[SIZE];
     time_t curtime;
     struct tm *loctime;
     curtime = time (NULL); //Get the current time
-	loctime = localtime (&curtime); //Convert it to local time representation
+    loctime = localtime (&curtime); //Convert it to local time representation
 
-	time_t now = time(NULL);
+    time_t now = time(NULL);
     struct tm *now_s = localtime(&now);
 
     printf("%02d:%02d:%02d\n",now_s->tm_hour, now_s->tm_min,now_s->tm_sec);
@@ -162,15 +162,14 @@ void sys_time_def()
 
 void sys_time_24hr()
 {
-	//Type Declaration Statements
     char input[IPSIZE];
     char buffer[SIZE];
     time_t curtime;
     struct tm *loctime;
     curtime = time (NULL); //Get the current time
-	loctime = localtime (&curtime); //Convert it to local time representation
+    loctime = localtime (&curtime); //Convert it to local time representation
 
-	time_t now = time(NULL);
+    time_t now = time(NULL);
     struct tm *now_s = localtime(&now);
     
     printf("%02d:%02d\n",now_s->tm_hour, now_s->tm_min);
@@ -182,13 +181,12 @@ void sys_time_24hr()
 
 void sys_time_12hr()
 {
-	//Type Declaration Statements
     char input[IPSIZE];
     char buffer[SIZE];
     time_t curtime;
     struct tm *loctime;
     curtime = time (NULL); //Get the current time
-	loctime = localtime (&curtime); //Convert it to local time representation
+    loctime = localtime (&curtime); //Convert it to local time representation
     
     strftime(buffer, SIZE, "The time is %I:%M %p\n", loctime);
     
@@ -201,7 +199,7 @@ void sys_time_12hr()
 
 void sys_date_def()
 {
-	time_t now = time(NULL);
+    time_t now = time(NULL);
     struct tm *now_s = localtime(&now);
 
     printf("%02d/%02d/%02d\n",++now_s ->tm_mon,now_s->tm_mday,1900+now_s->tm_year);
@@ -213,15 +211,14 @@ void sys_date_def()
 
 void sys_day()
 {
-	//Type Declaration Statements
     char input[IPSIZE];
     char buffer[SIZE];
     time_t curtime;
     struct tm *loctime;
     curtime = time (NULL); //Get the current time
-	loctime = localtime (&curtime); //Convert it to local time representatio
+    loctime = localtime (&curtime); //Convert it to local time representatio
 	
-	strftime(buffer, SIZE, "Today is %A, %B %d.\n", loctime);
+    strftime(buffer, SIZE, "Today is %A, %B %d.\n", loctime);
     
     fputs(buffer, stdout);
 
@@ -232,12 +229,11 @@ void sys_day()
 
 void sys_day_det()
 {
-	//Type Declaration Statements
     char input[IPSIZE];
     char buffer[SIZE];
     time_t curtime;
     struct tm *loctime;
-	curtime = time (NULL); //Get the current time
+    curtime = time (NULL); //Get the current time
     loctime = localtime (&curtime); //Convert it to local time representation
 
 	//Print out day and time in a nice format
@@ -245,9 +241,9 @@ void sys_day_det()
     fputs(buffer, stdout);
 
      //Print out the date and time in the standard format
-     fputs(asctime (loctime), stdout);
+    fputs(asctime (loctime), stdout);
 
-	strftime(buffer, SIZE, "The time is %I:%M %p.\n", loctime);
+    strftime(buffer, SIZE, "The time is %I:%M %p.\n", loctime);
 
     fputs(buffer, stdout);
 
