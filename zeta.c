@@ -27,9 +27,6 @@
 #define SIZE 256
 #define IPSIZE 10
 
-#define PERR(bSuccess, api){if(!(bSuccess)) printf("%s:Error %d from %s \ on line %d\n", __FILE__, GetLastError(), api, __LINE__);}
-
-
 void initiate();
 void main_exit();
 void sys_time_def();
