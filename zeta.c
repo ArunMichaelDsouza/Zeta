@@ -63,7 +63,7 @@ void initiate()
     //CLEAR SCREEN COMMAND
     else if(stricmp(input,"clr")==0) //To clear screen
     {
-    	cls( GetStdHandle( STD_OUTPUT_HANDLE ));
+    	system("cls");
 	initiate();
     }
     //----------------------------------------------------------------------------------------
