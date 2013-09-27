@@ -244,7 +244,7 @@ void sys_day_det()
 
     fputs(buffer, stdout);
 
-    initiate();
+    main(0,0);
 }
 
 
