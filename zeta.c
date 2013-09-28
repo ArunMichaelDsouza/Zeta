@@ -39,7 +39,6 @@ void sys_day_det();
 int main(int argc, char const *argv[])
 {
 	initiate();
-	return 0;
 }
 
 void initiate()
