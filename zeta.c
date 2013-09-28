@@ -39,6 +39,8 @@ void sys_day_det();
 int main(int argc, char const *argv[])
 {
 	initiate();
+	sys_day();
+	sys_day_det();
 }
 
 void initiate()
