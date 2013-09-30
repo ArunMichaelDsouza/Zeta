@@ -1,4 +1,4 @@
-/* Header for sys_time_12hr() funtion.
+/* Header for sys_time_12hr() function.
 
    Displays the system time in 12hr format.
 

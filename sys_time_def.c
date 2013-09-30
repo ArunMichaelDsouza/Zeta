@@ -1,4 +1,4 @@
-/* Definition of sys_time_def() funtion.
+/* Definition of sys_time_def() function.
 
    Displays the system time in default format.
    The time can also be set accordingly using this function.

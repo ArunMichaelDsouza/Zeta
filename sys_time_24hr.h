@@ -1,4 +1,4 @@
-/* Header for sys_time_24hr() funtion.
+/* Header for sys_time_24hr() function.
 
    Displays the system time in 24hr format.
 

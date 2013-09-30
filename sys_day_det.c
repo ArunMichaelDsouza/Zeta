@@ -1,4 +1,4 @@
-/* Definition of sys_day_det() funtion.
+/* Definition of sys_day_det() function.
 
    Displays the current system calendar day in a detailed format.
 

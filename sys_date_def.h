@@ -1,4 +1,4 @@
-/* Header for sys_date_def() funtion.
+/* Header for sys_date_def() function.
 
    Displays the system date in default format.
    The date can also be set accordingly using this function.

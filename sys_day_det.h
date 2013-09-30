@@ -1,4 +1,4 @@
-/* Header for sys_day_det() funtion.
+/* Header for sys_day_det() function.
 
    Displays the current system calendar day in a detailed format.
 
