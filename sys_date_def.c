@@ -19,6 +19,6 @@ void sys_date_def()
     time_t now = time(NULL);
     struct tm *now_s = localtime(&now);
 
-    printf("%02d/%02d/%02d\n",++now_s ->tm_mon,now_s->tm_mday,1900+now_s->tm_year);
+    
 
 }
