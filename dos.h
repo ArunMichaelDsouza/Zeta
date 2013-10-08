@@ -8,7 +8,8 @@
  *
  */
 
-
+#ifndef _DOS_H_ 
+#define _DOS_H_
 
 /* All the headers include this file. */
 #include <_mingw.h>
