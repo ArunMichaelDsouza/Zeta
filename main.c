@@ -23,7 +23,6 @@
 
 #include "sys_snap.h"
 
-
 void initiate();
 void main_exit();
 
@@ -62,19 +61,19 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     //TIME COMMANDS
-    else if ((stricmp(input,"time")==0)) //To show time (default format:24hr HH/MM/SS.MS)
+    else if ((stricmp(input,"time")==0)) //To show time (default format-24hr HH/MM/SS.MS)
     {
     	sys_time_def();
     	initiate();
     }
 
-    else if ((stricmp(input,"time-24")==0)) //To show time in 24hrformat:HH/MM
+    else if ((stricmp(input,"time-24")==0)) //To show time in 24hrformat (HH:MM)
     {
     	sys_time_24hr();
     	initiate();
     }
 
-    else if ((stricmp(input,"time-12")==0)) //To show time in 12hr format:HH:MM AM/PM
+    else if ((stricmp(input,"time-12")==0)) //To show time in 12hr format (HH:MM AM/PM)
     {
         sys_time_12hr();
         initiate();
@@ -110,9 +109,9 @@ void initiate()
     	initiate();
     }
 
-    else if ((stricmp(input,"day-d")==0)) //To show day info in detailed format
+    else if ((stricmp(input,"day-i")==0)) //To show complete day info
     {
-    	sys_day_det();
+    	sys_day_info();
     	initiate();
     }
     //----------------------------------------------------------------------------------------
