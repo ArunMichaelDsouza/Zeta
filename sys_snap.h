@@ -16,8 +16,7 @@
 #define SYS_SNAP_H_INCLUDED
 
 void sys_date_def();
-void sys_day();
-void sys_day_info();
+
 void sys_time_12hr();
 void sys_time_24hr();
 void sys_time_def();
