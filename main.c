@@ -21,9 +21,7 @@
 #include <process.h>
 #include <stdlib.h>
 
-#include "sys_time_def.h"
-#include "sys_time_24hr.h"
-#include "sys_time_12hr.h"
+#include "sys_snap.h"
 
 
 void initiate();
