@@ -21,7 +21,7 @@ void sys_day()
     char input[IPSIZE];
     char buffer[SIZE];
     time_t curtime;
-    struct tm *loctime;
+    
     curtime = time (NULL); //Get the current time
     loctime = localtime (&curtime); //Convert it to local time representatio
 
