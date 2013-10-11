@@ -25,8 +25,6 @@
 #include "sys_time_24hr.h"
 #include "sys_time_12hr.h"
 #include "sys_date_def.h"
-#include "sys_day.h"
-#include "sys_day_det.h"
 
 
 void initiate();
