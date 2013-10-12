@@ -26,7 +26,7 @@
 void initiate();
 void main_exit();
 
-int main(int argc, char const *argv[])
+int main(int argc, char* argv[])
 {
 	initiate();
 	return 0;
