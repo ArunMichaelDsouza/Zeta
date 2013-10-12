@@ -119,7 +119,7 @@ void initiate()
 	else
     {
     	printf("\aCommand not found. \n");
-    	
+    	initiate();
     }
 
 
