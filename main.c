@@ -23,6 +23,8 @@
 
 #include "sys_snap.h"
 
+char input[30];
+
 void initiate();
 void main_exit();
 
@@ -34,8 +36,6 @@ int main(int argc, char* argv[])
 
 void initiate()
 {
-    char input[30];
-
     //Prompt Start
 
     printf("\n:> ");
