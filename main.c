@@ -43,7 +43,7 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     //EXIT COMMAND
-    if ((stricmp(input,"exit")==0))//To exit command interpreter
+    if ((stricmp(input,"exit")==0)) //To exit command interpreter
     {
         main_exit();
     }
