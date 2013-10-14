@@ -23,6 +23,8 @@
 
 #include "sys_snap.h"
 
+#define SIZE 30
+
 char input[30];
 
 void initiate();
