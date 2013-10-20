@@ -13,4 +13,11 @@ Zeta has been built at an 'implementation-scale'. Although the native OS
 is equipped with a standard command-line utility, use of Zeta is completely encouraged.
 
 
-NOTE : Zeta is currently in development mode. Alteration, tweaking and refinement of code will be done during the release of the first build.
+NOTE : Zeta is currently in development mode. Alteration, tweaking and refinement of code is being done continuously.
+
+
+Send a pull request......feel free to contribute! Or just fork it! have fun exploring!!
+
+If any problem persists, feel free to post an issue or drop an email.
+
+Arun Michael Dsouza. amdsouza92@gmail.com
