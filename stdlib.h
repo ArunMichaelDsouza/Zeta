@@ -12,7 +12,7 @@
 #define _STDLIB_H_
 
 /* All the headers include this file. */
-#include <_mingw.h>
+
 
 #define __need_size_t
 #define __need_wchar_t
