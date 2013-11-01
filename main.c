@@ -22,10 +22,13 @@
 #include <stdlib.h>
 
 #include "sys_snap.h"
+#include "string_manip.h"
 
 #define SIZE 30
 
 char input[SIZE];
+
+char str[100];
 
 void initiate();
 void main_exit();
@@ -118,6 +121,15 @@ void initiate()
     }
     //----------------------------------------------------------------------------------------
 
+    //----------------------------------------------------------------------------------------
+    // STRING MANIPULATION COMMANDS
+    else if ((stricmp(input,"strln")==0)) // To return length of string
+    {
+        strln();
+        initiate();
+    }
+    //----------------------------------------------------------------------------------------
+
 	else
     {
     	printf("\aCommand not found. \n");
@@ -133,11 +145,3 @@ void main_exit()
 {
     exit(0);
 }
-
-
-
-
-
-
-
-
