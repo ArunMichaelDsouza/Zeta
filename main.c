@@ -23,10 +23,14 @@
 
 #include "sys_snap.h"
 
+#define SIZE 30
+
+char input[SIZE];
+
 void initiate();
 void main_exit();
 
-int main(int argc, char const *argv[])
+int main(int argc, char* argv[])
 {
 	initiate();
 	return 0;
@@ -34,8 +38,6 @@ int main(int argc, char const *argv[])
 
 void initiate()
 {
-    char input[30];
-
     //Prompt Start
 
     printf("\n:> ");
@@ -43,7 +45,7 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     //EXIT COMMAND
-    if ((stricmp(input,"exit")==0))//To exit command interpreter
+    if ((stricmp(input,"exit")==0)) //To exit command interpreter
     {
         main_exit();
     }
