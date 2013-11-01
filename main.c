@@ -28,7 +28,6 @@
 
 char input[SIZE];
 
-char str[100];
 
 void initiate();
 void main_exit();
