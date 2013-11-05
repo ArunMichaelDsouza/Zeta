@@ -26,8 +26,6 @@
 
 #define SIZE 30
 
-#define INREC 34
-
 char input[SIZE];
 
 void initiate();
