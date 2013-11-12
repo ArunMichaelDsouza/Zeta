@@ -14,7 +14,7 @@ void strln()
 {
     int n=1000; //Default size which can be held
     char str[n];
-    fgets(str, n, stdin);
+    
     scanf("%[^\n]s",str);
     int i=0;
     int len=0;
