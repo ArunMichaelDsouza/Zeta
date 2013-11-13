@@ -28,6 +28,8 @@
 
 char input[SIZE];
 
+char str[100];
+
 void initiate();
 void main_exit();
 
@@ -46,7 +48,7 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     //EXIT COMMAND
-    if ((stricmp(input,"exit")==0)) //To exit command interpreter
+    if((stricmp(input,"exit")==0)) //To exit command interpreter
     {
         main_exit();
     }
@@ -64,25 +66,25 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     //TIME COMMANDS
-    else if ((stricmp(input,"time")==0)) //To show time (default format-24hr HH/MM/SS.MS)
+    else if((stricmp(input,"time")==0)) //To show time (default format-24hr HH/MM/SS.MS)
     {
     	sys_time_def();
     	initiate();
     }
 
-    else if ((stricmp(input,"time-24")==0)) //To show time in 24hrformat (HH:MM)
+    else if((stricmp(input,"time-24")==0)) //To show time in 24hrformat (HH:MM)
     {
     	sys_time_24hr();
     	initiate();
     }
 
-    else if ((stricmp(input,"time-12")==0)) //To show time in 12hr format (HH:MM AM/PM)
+    else if((stricmp(input,"time-12")==0)) //To show time in 12hr format (HH:MM AM/PM)
     {
         sys_time_12hr();
         initiate();
     }
 
-    else if ((stricmp(input,"time-e")==0)) //To show time and provide 'editing' option
+    else if((stricmp(input,"time-e")==0)) //To show time and provide 'editing' option
     {
         system("time");
         initiate();
@@ -91,13 +93,13 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     //DATE COMMANDS
-    else if ((stricmp(input,"date")==0)) //To show date (default format:MM/DD/YYYY)
+    else if((stricmp(input,"date")==0)) //To show date (default format:MM/DD/YYYY)
     {
     	sys_date_def();
     	initiate();
     }
 
-    else if ((stricmp(input,"date-e")==0)) //To show date and provide 'editing' option
+    else if((stricmp(input,"date-e")==0)) //To show date and provide 'editing' option
     {
         system("date");
         initiate();
@@ -106,13 +108,13 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     //DAY COMMANDS
-    else if ((stricmp(input,"day")==0)) //To show day/date of month
+    else if((stricmp(input,"day")==0)) //To show day/date of month
     {
     	sys_day();
     	initiate();
     }
 
-    else if ((stricmp(input,"day-i")==0)) //To show complete day info
+    else if((stricmp(input,"day-i")==0)) //To show complete day info
     {
     	sys_day_info();
     	initiate();
@@ -121,9 +123,15 @@ void initiate()
 
     //----------------------------------------------------------------------------------------
     // STRING MANIPULATION COMMANDS
-    else if ((stricmp(input,"strln")==0)) // To return length of string
+    else if((stricmp(input,"strln")==0)) // To return length of string
     {
         strln();
+        initiate();
+    }
+
+    else if((stricmp(input,"strwht")==0))
+    {
+        strwht();
         initiate();
     }
     //----------------------------------------------------------------------------------------
