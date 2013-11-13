@@ -28,7 +28,6 @@
 
 char input[SIZE];
 
-
 void initiate();
 void main_exit();
 
