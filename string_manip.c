@@ -14,7 +14,7 @@
 int n=1000; //Default size which can be held
 char str[1000];
 
-int i=0;
+
 
 void strln()
 {
