@@ -31,7 +31,7 @@ char input[SIZE];
 void initiate();
 void main_exit();
 
-int main()
+int main(int argc, char* argv[])
 {
 	initiate();
 	return 0;
