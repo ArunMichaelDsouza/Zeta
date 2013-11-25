@@ -66,8 +66,8 @@ void initiate()
     //TIME COMMANDS
     else if((stricmp(input,"time")==0)) //To show time (default format-24hr HH/MM/SS.MS)
     {
-    	sys_time_def();
-    	initiate();
+    sys_time_def();
+    initiate();
     }
 
     else if((stricmp(input,"time-24")==0)) //To show time in 24hrformat (HH:MM)
