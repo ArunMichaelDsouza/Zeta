@@ -56,7 +56,7 @@ void initiate()
     //CLEAR SCREEN COMMAND
     else if(stricmp(input,"clr")==0) //To clear screen
     {
-    system("cls");
+        system("cls");
         initiate();
     }
     //----------------------------------------------------------------------------------------
