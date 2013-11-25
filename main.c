@@ -114,7 +114,7 @@ void initiate()
 
     else if((stricmp(input,"day-i")==0)) //To show complete day info
     {
-    	sys_day_info();
+        sys_day_info();
     	initiate();
     }
     //----------------------------------------------------------------------------------------
