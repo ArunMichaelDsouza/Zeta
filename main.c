@@ -26,6 +26,8 @@
 
 #define SIZE 30
 
+#define SIZE2 45
+
 char input[SIZE];
 
 void initiate();
@@ -132,6 +134,7 @@ void initiate()
         strwht();
         initiate();
     }
+    
     //----------------------------------------------------------------------------------------
 
 	else
