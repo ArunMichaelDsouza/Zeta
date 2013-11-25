@@ -72,8 +72,8 @@ void initiate()
 
     else if((stricmp(input,"time-24")==0)) //To show time in 24hrformat (HH:MM)
     {
-    	sys_time_24hr();
-    	initiate();
+        sys_time_24hr();
+        initiate();
     }
 
     else if((stricmp(input,"time-12")==0)) //To show time in 12hr format (HH:MM AM/PM)
