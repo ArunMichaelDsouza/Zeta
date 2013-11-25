@@ -33,8 +33,8 @@ void main_exit();
 
 int main(int argc, char* argv[])
 {
-	initiate();
-	return 0;
+    initiate();
+    return 0;
 }
 
 void initiate()
@@ -56,8 +56,8 @@ void initiate()
     //CLEAR SCREEN COMMAND
     else if(stricmp(input,"clr")==0) //To clear screen
     {
-        system("cls");
-        initiate();
+       system("cls");
+       initiate();
     }
     //----------------------------------------------------------------------------------------
 
@@ -66,13 +66,13 @@ void initiate()
     //TIME COMMANDS
     else if((stricmp(input,"time")==0)) //To show time (default format-24hr HH/MM/SS.MS)
     {
-    sys_time_def();
-    initiate();
+        sys_time_def();
+        initiate();
     }
 
     else if((stricmp(input,"time-24")==0)) //To show time in 24hrformat (HH:MM)
     {
-    	sys_time_24hr();
+        sys_time_24hr();
     	initiate();
     }
 
@@ -129,7 +129,7 @@ void initiate()
 
     else if((stricmp(input,"strwht")==0))
     {
-        strwht();
+    	strwht();
         initiate();
     }
     
