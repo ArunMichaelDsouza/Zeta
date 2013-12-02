@@ -22,7 +22,7 @@
 #include "sys_snap.h"
 #include "str_manip.h"
 
-void initiate();
+//void initiate();
 void main_exit();
 
 #define SIZE 30
