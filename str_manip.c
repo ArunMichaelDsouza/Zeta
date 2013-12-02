@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "str_manip.h"
 
-#define MAX 100
+#define MAX 200
 
 
 
