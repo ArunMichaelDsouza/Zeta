@@ -1,7 +1,7 @@
 Zeta
 ====
 
-Zeta is a prompt/command interpreter built purely in C for Windows OS.
+Zeta is a Command interpreter built purely in C for Windows OS.
 
 Coding by - Arun Michael Dsouza 
 
