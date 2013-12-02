@@ -25,15 +25,15 @@
 void initiate();
 void main_exit();
 
-#define SIZE 30
+#define SIZE 40
 char input[SIZE];
 
 
 
 int main(int argc,char* argv[])
 {
-    initiate();
-    return 0;
+	initiate();
+	return 0;
 }
 
 
@@ -57,8 +57,8 @@ void initiate()
     //CLEAR SCREEN COMMAND
     else if(stricmp(input,"clr\n")==0) //To clear screen
     {
-       system("cls");
-       initiate();
+    	system("cls");
+        initiate();
     }
     //----------------------------------------------------------------------------------------
 
@@ -67,14 +67,14 @@ void initiate()
     //TIME COMMANDS
     else if((stricmp(input,"time\n")==0)) //To show time (default format-24hr HH/MM/SS.MS)
     {
-        sys_time_def();
-        initiate();
+    	sys_time_def();
+    	initiate();
     }
 
     else if((stricmp(input,"time-24\n")==0)) //To show time in 24hrformat (HH:MM)
     {
-        sys_time_24hr();
-        initiate();
+    	sys_time_24hr();
+    	initiate();
     }
 
     else if((stricmp(input,"time-12\n")==0)) //To show time in 12hr format (HH:MM AM/PM)
@@ -115,7 +115,7 @@ void initiate()
 
     else if((stricmp(input,"day-i\n")==0)) //To show complete day info
     {
-        sys_day_info();
+    	sys_day_info();
     	initiate();
     }
     //----------------------------------------------------------------------------------------
@@ -130,14 +130,9 @@ void initiate()
 
     else if((stricmp(input,"strwht\n")==0)) // Returns no. of whitespaces in the String
     {
-    	strwht();
+        strwht();
         initiate();
     }
-<<<<<<< HEAD
-=======
-    
-    //----------------------------------------------------------------------------------------
->>>>>>> da8712e8be5432a331e3d6d7cf262fe61b0f7b84
 
     else if((stricmp(input,"strslice\n")==0)) // Returns a SubString from the given String using mentioned indices
     {
