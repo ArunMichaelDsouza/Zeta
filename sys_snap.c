@@ -1,6 +1,6 @@
 /* Definition of various system date/time/day functions.
 
-   sys_date_def()  - Displays the system date in default format.
+   sys_date_def()   Displays the system date in default format.
    sys_day()       - Displays the current system calendar day.
    sys_day_info()  - Displays the complete current system calendar day info.
    sys_time_12hr() - Displays the system time in 12hr format.
