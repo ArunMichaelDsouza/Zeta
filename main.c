@@ -139,6 +139,12 @@ void initiate()
         strslice();
         initiate();
     }
+
+    else if((stricmp(input,"strcap\n")==0)) // Capitalises the entered String
+    {
+        strcap();
+        initiate();
+    }
     //----------------------------------------------------------------------------------------
 
 	else
@@ -146,6 +152,7 @@ void initiate()
         printf("\aCommand not found.\n");
         initiate();
 	}
+
 }
 
 
