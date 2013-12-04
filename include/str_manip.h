@@ -3,6 +3,7 @@
    strln()    - Returns the length of the entered string.
    strwht()   - Returns the no. of whitespaces in the entered string.
    strslice() - Returns a sub string from the entered string using the mentioned indices.
+   strcap()   - Capitalises the entered String.
 
    Coding by - Arun Michael Dsouza
    Date : 02/11/2013
@@ -15,5 +16,6 @@
 void strln();
 void strwht();
 void strslice();
+void strcap();
 
 #endif // STRING_MANIP_H_INCLUDED
