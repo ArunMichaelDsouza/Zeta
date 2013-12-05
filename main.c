@@ -145,6 +145,12 @@ void initiate()
         strcap();
         initiate();
     }
+
+    else if((stricmp(input,"strtolow\n")==0)) // Converts uppercase String to lowercase
+    {
+        strtolow();
+        initiate();
+    }
     //----------------------------------------------------------------------------------------
 
 	else
