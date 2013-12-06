@@ -18,5 +18,6 @@ void strln();
 void strwht();
 void strslice();
 void strcap();
+void strtolow();
 
 #endif // STRING_MANIP_H_INCLUDED
