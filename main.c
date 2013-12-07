@@ -44,10 +44,11 @@ void initiate()
 
     printf("\n:> ");
     fgets(input,sizeof(input),stdin);
+    
 
     //----------------------------------------------------------------------------------------
     //EXIT COMMAND
-    if((stricmp(input,"exit\n")==0)) //To exit command interpreter
+    else if((stricmp(input,"exit\n")==0)) //To exit command interpreter
     {
         main_exit();
     }
