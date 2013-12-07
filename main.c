@@ -50,7 +50,6 @@ void initiate()
     	initiate();
     }
     
-
     //----------------------------------------------------------------------------------------
     //EXIT COMMAND
     else if((stricmp(input,"exit\n")==0)) //To exit command interpreter
