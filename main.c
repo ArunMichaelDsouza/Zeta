@@ -45,6 +45,11 @@ void initiate()
     printf("\n:> ");
     fgets(input,sizeof(input),stdin);
     
+    if((stricmp(input,"\n")==0))
+    {
+    	initiate();
+    }
+    
 
     //----------------------------------------------------------------------------------------
     //EXIT COMMAND
