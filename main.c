@@ -25,7 +25,7 @@
 void initiate();
 void main_exit();
 
-#define SIZE 30
+#define SIZE 300
 char input[SIZE];
 
 
