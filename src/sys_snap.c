@@ -19,7 +19,7 @@
 #include <windows.h>
 
 #define SIZE 256
-#define IPSIZE 20
+#define IPSIZE 10
 
 char input[IPSIZE];
 char buffer[SIZE];
