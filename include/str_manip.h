@@ -19,6 +19,5 @@ void strwht();
 void strslice();
 void strcap();
 void strtolow();
-void strcomp();
 
 #endif // STRING_MANIP_H_INCLUDED
