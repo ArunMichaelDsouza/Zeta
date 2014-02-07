@@ -106,7 +106,6 @@ void initiate()
     else if((stricmp(input,"date-e\n")==0)) //To show date and provide 'editing' option
     {
         system("date");
-        printf("\nThe time is :");
         initiate();
     }
     //----------------------------------------------------------------------------------------
