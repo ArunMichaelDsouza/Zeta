@@ -24,7 +24,6 @@
 
 void initiate();
 void main_exit();
-void blur_edit();
 
 #define SIZE 30
 char input[SIZE];
