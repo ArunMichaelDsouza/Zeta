@@ -3,17 +3,13 @@ Zeta
 
 Zeta is a Command interpreter built purely in C for Windows OS.
 
-Coding by - Arun Michael Dsouza 
+It provides a command-line interface to users, to access the services offered by the kernel. Useful for developers for carrying out debugging sessions and providing more features than a standard command-line utility for performing tasks with ease.
 
-Date : 26/09/2013
-
-It provides a command-line interface to users, to access the services offered by the kernel of the OS.
-
-Zeta has been built at an 'implementation-scale'. Although the native OS
+Zeta has been built at an 'implementation-scale'. Although Windows OS
 is equipped with a standard command-line utility, use of Zeta is completely encouraged.
 
 
-NOTE : Zeta is currently in development mode. Alteration, tweaking and refinement of code is being done continuously.
+NOTE : Zeta is currently in development mode. Alteration, tweaking and refinement is being done continuously.
 
 ==================
 
