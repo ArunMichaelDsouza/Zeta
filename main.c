@@ -18,7 +18,6 @@
 #include <string.h>
 #include <process.h>
 #include <stdlib.h>
-#include <windows.h>
 
 #include "sys_snap.h"
 #include "str_manip.h"
