@@ -11,10 +11,8 @@ is equipped with a standard command-line utility, use of Zeta is completely enco
 
 NOTE : Zeta is currently in development mode. Alteration, tweaking and refinement is being done continuously.
 
+#####Development has been stopped as of Aug 2013 (Send a pull request if you want to contribute)
+
+Cheers! 
+
 ==================
-
-Send a pull request......feel free to contribute! Or just fork it! have fun exploring!!
-
-If any problem persists, feel free to post an issue or drop an email.
-
-Arun Michael Dsouza. amdsouza92@gmail.com
